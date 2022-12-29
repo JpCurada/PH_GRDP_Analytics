@@ -155,7 +155,7 @@ with st.container():
     st.markdown('---')
 
     st.subheader('Gross Domestic Regional Product')
-    cur_con = st.radio('Gross Domestic Product of selected regions and selected industry from year 2000 to 2021',('At Current Prices', 'At Constant Prices')         
+    cur_con = st.radio('Gross Domestic Product of selected regions and selected industry from year 2000 to 2021',('At Current Prices', 'At 2018 Constant Prices')         
     constant_or_current = if_constant_or_current(cur_con)
    
     st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
