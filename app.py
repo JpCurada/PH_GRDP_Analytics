@@ -143,7 +143,7 @@ with st.container():
     st.write('***At Current Prices:***' )
     st.caption('Current prices, also known as nominal prices, refer to the actual price of a good or service at a specific point in time.')
     st.write('***At 2018 Constant Prices:***')
-    st.caption('Constant prices, on the other hand, are adjusted for inflation and represent the real value of a good or service. Constant prices are used to compare economic performance or indicators over time and across regions, as they reflect the purchasing power of an economy rather than just the nominal prices of goods and services. Constant prices are often referred to as "real" prices because they reflect the actual value of goods and services rather than just the nominal price.')
+    st.caption('Constant prices, on the other hand, are adjusted for inflation and represent the real value of a good or service. Constant prices are used to compare economic performance or indicators over time and across regions, as they reflect the purchasing power of an economy rather than just the nominal prices of goods and services. Constant prices are often referred to as "real" prices because they reflect the actual value of goods and services rather than just the nominal price. The Philippine Statistics Authority (PSA) set the year 2018 as the reference datum for constant prices.')
 
    
     st.markdown('---')
