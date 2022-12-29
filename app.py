@@ -107,6 +107,12 @@ def get_min_details(data):
                 region = column    
     return min_grate, year, region
 
+def if_constant_or_current(cur_con):
+    if cur_con == 'At Current Prices':
+         return 'At Current Prices
+    else:
+         return 'At 2018 Constant Prices'
+
 @st.cache
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
@@ -149,7 +155,9 @@ with st.container():
     st.markdown('---')
 
     st.subheader('Gross Domestic Regional Product')
-    constant_or_current = st.radio('Gross Domestic Product of selected regions and selected industry from year 2000 to 2021',('At Current Prices', 'At 2018 Constant Prices'))
+    cur_con = st.radio('Gross Domestic Product of selected regions and selected industry from year 2000 to 2021',('At Current Prices', 'At Constant Prices')         
+    constant_or_current = if_constant_or_current(cur_con)
+   
     st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
     regions_col, industry_col = st.columns(2)
     with regions_col:   
