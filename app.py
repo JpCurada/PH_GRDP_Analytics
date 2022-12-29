@@ -107,12 +107,6 @@ def get_min_details(data):
                 region = column    
     return min_grate, year, region
 
-def if_constant_or_current(cur_con):
-    if cur_con == 'At Current Prices':
-         return 'At Current Prices'
-    else:
-         return 'At 2018 Constant Prices'
-
 @st.cache
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
@@ -149,15 +143,13 @@ with st.container():
     st.write('***At Current Prices:***' )
     st.caption('Current prices, also known as nominal prices, refer to the actual price of a good or service at a specific point in time.')
     st.write('***At 2018 Constant Prices:***')
-    st.caption('Constant prices, on the other hand, are adjusted for inflation and represent the real value of a good or service. Constant prices are used to compare economic performance or indicators over time and across regions, as they reflect the purchasing power of an economy rather than just the nominal prices of goods and services. Constant prices are often referred to as "real" prices because they reflect the actual value of goods and services rather than just the nominal price. The Philippine Statistics Authority (PSA) set the year 2018 as the reference datum for constant prices.')
+    st.caption('Constant prices, on the other hand, are adjusted for inflation and represent the real value of a good or service. Constant prices are used to compare economic performance or indicators over time and across regions, as they reflect the purchasing power of an economy rather than just the nominal prices of goods and services. Constant prices are often referred to as "real" prices because they reflect the actual value of goods and services rather than just the nominal price.')
 
    
     st.markdown('---')
 
     st.subheader('Gross Domestic Regional Product')
-    cur_con = st.radio('Gross Domestic Product of selected regions and selected industry from year 2000 to 2021',('At Current Prices', 'At 2018 Constant Prices')         
-    constant_or_current = if_constant_or_current(cur_con)
-   
+    constant_or_current = st.radio('Gross Domestic Product of selected regions and selected industry from year 2000 to 2021',('At Current Prices', 'At 2018 Constant Prices'))
     st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
     regions_col, industry_col = st.columns(2)
     with regions_col:   
@@ -281,6 +273,3 @@ with st.container():
     st.caption("""***Source: https://openstat.psa.gov.ph/Database/Gross-Regional-Domestic-Product***""")
     st.write("""***— John Paul M. Curada***
     [@LinkedIn](https://www.linkedin.com/in/jp-curada-20b69b214/) [@Twitter](https://twitter.com/jpcodesss)""")
-
-
-    
