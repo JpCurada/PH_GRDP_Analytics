@@ -138,9 +138,9 @@ with st.container():
    
     st.subheader("Terms of Definitions")
 
-    st.caption('GRDP: Gross Regional Domestic Product (GRDP) is a metric used to assess the economic output of a specific region. It takes into account the value of all goods and services produced within the region, and is often reported in terms of growth rate or change over time. GRDP is typically reported in real terms, meaning that it is adjusted for inflation and reflects the actual purchasing power of the economy. This allows for comparison of economic performance between different time periods or regions.')
-    st.caption('At Current Prices: Current prices, also known as nominal prices, refer to the actual price of a good or service at a specific point in time.')
-    st.caption('At 2018 Constant Price: Constant prices, on the other hand, are adjusted for inflation and represent the real value of a good or service. Constant prices are used to compare economic performance or indicators over time and across regions, as they reflect the purchasing power of an economy rather than just the nominal prices of goods and services. Constant prices are often referred to as "real" prices because they reflect the actual value of goods and services rather than just the nominal price.')
+    st.caption('**GRDP:** Gross Regional Domestic Product (GRDP) is a metric used to assess the economic output of a specific region. It takes into account the value of all goods and services produced within the region, and is often reported in terms of growth rate or change over time. GRDP is typically reported in real terms, meaning that it is adjusted for inflation and reflects the actual purchasing power of the economy. This allows for comparison of economic performance between different time periods or regions.')
+    st.caption('**At Current Prices:** Current prices, also known as nominal prices, refer to the actual price of a good or service at a specific point in time.')
+    st.caption('**At 2018 Constant Price:** Constant prices, on the other hand, are adjusted for inflation and represent the real value of a good or service. Constant prices are used to compare economic performance or indicators over time and across regions, as they reflect the purchasing power of an economy rather than just the nominal prices of goods and services. Constant prices are often referred to as "real" prices because they reflect the actual value of goods and services rather than just the nominal price.')
 
    
     st.markdown('---')
