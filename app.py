@@ -109,7 +109,7 @@ def get_min_details(data):
 
 def if_constant_or_current(cur_con):
     if cur_con == 'At Current Prices':
-         return 'At Current Prices
+         return 'At Current Prices'
     else:
          return 'At 2018 Constant Prices'
 
