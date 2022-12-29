@@ -132,7 +132,8 @@ with st.container():
     of regions within the Philippines from 2000 to 2021. This application provides insights to users by giving visualization charts 
     and downloadable CSV files of selected parameters by the user.""")
 
-    st.caption("""Note: Change your theme to 'Dark' theme in settings for better visualization. """)
+    t2.caption("""Note: Change your theme to 'Dark' theme in settings for better visualization. """)
+      
     st.markdown('---')
 
     st.subheader('Gross Domestic Regional Product')
